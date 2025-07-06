@@ -59,7 +59,7 @@ export function Navigation() {
               />
             </div>
             <span className={`text-2xl font-bold transition-colors duration-300 ${
-              isScrolled ? 'text-white' : 'text-white'
+              isScrolled ? 'text-black' : 'text-white'
             }`}>FreemanForex</span>
           </button>
 
