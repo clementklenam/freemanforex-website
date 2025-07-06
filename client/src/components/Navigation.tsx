@@ -39,8 +39,8 @@ export function Navigation() {
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-white/95 backdrop-blur-sm text-black shadow-lg' 
-        : 'bg-transparent text-white'
+        ? 'bg-white/95 backdrop-blur-sm text-amber-600 shadow-lg' 
+        : 'bg-transparent text-amber-400'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
@@ -58,7 +58,9 @@ export function Navigation() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <span className="text-2xl font-bold">FreemanForex</span>
+            <span className={`text-2xl font-bold transition-colors duration-300 ${
+              isScrolled ? 'text-amber-600' : 'text-amber-400'
+            }`}>FreemanForex</span>
           </button>
 
           {/* Desktop Navigation */}
@@ -69,8 +71,8 @@ export function Navigation() {
                 onClick={() => scrollToSection(item.id)}
                 className={`transition-colors duration-300 cursor-pointer ${
                   isScrolled 
-                    ? 'hover:text-yellow-500' 
-                    : 'hover:text-yellow-400'
+                    ? 'hover:text-amber-700' 
+                    : 'hover:text-amber-300'
                 }`}
               >
                 {item.label}
@@ -84,8 +86,8 @@ export function Navigation() {
             size="icon"
             className={`md:hidden transition-colors duration-300 ${
               isScrolled 
-                ? 'text-black hover:bg-black/10' 
-                : 'text-white hover:bg-white/10'
+                ? 'text-amber-600 hover:bg-amber-600/10' 
+                : 'text-amber-400 hover:bg-amber-400/10'
             }`}
             onClick={toggleMenu}
           >
@@ -96,7 +98,7 @@ export function Navigation() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className={`md:hidden pb-4 space-y-2 ${
-            isScrolled ? 'text-black' : 'text-white'
+            isScrolled ? 'text-amber-600' : 'text-amber-400'
           }`}>
             {navItems.map((item) => (
               <button
@@ -104,8 +106,8 @@ export function Navigation() {
                 onClick={() => scrollToSection(item.id)}
                 className={`block py-2 transition-colors duration-300 cursor-pointer w-full text-left ${
                   isScrolled 
-                    ? 'hover:text-yellow-500' 
-                    : 'hover:text-yellow-400'
+                    ? 'hover:text-amber-700' 
+                    : 'hover:text-amber-300'
                 }`}
               >
                 {item.label}
