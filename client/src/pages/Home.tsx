@@ -735,8 +735,9 @@ Sent from FreemanForex website
                 { video: "/videos/video1.mp4", title: "Live Market Analysis", description: "Real-time market analysis and trading insights" },
                 { video: "/videos/video2.mp4", title: "Fundamental Analysis 1", description: "Understanding market fundamentals and economic indicators" },
                 { video: "/videos/video3.mp4", title: "Fundamental Analysis Part 2", description: "Advanced fundamental analysis techniques and strategies" },
-                { video: "/videos/video6.mp4", title: "Chart Pattern Recognition", description: "Identifying profitable trading patterns" },
-                { video: "/videos/video7.mp4", title: "Trading Tips & Tricks", description: "Pro strategies for improving your trading performance" }
+                { video: "/videos/video6.mp4", title: "Fundamental Analysis Part 3", description: "Advanced market analysis and trading strategies" },
+                { video: "/videos/video5.1.mp4", title: "Gold Live Trades", description: "Live gold trading sessions and real-time analysis" },
+                { video: "/videos/video6.1.mp4", title: "Live Gold Analysis", description: "Real-time gold market analysis and insights" }
               ].map((videoData, index) => (
                 <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white overflow-hidden">
                   <CardContent className="p-0">
