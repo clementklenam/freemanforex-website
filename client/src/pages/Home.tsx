@@ -730,9 +730,9 @@ Sent from FreemanForex website
             </div>
             
             {/* Video Grid */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {[
-                { video: "/videos/video1.mp4", title: "Market Analysis Fundamentals", description: "Understanding key market indicators and price action" },
+                { video: "/videos/video1.mp4", title: "Live Market Analysis", description: "Real-time market analysis and trading insights" },
                 { video: "/videos/video2.mp4", title: "Gold Trading Strategy", description: "XAUUSD analysis and entry/exit strategies" },
                 { video: "/videos/video3.mp4", title: "Risk Management Techniques", description: "Protecting your capital with proper risk management" },
                 { video: "/videos/video4.mp4", title: "Forex Trading Psychology", description: "Mental discipline for consistent trading success" },
@@ -740,12 +740,12 @@ Sent from FreemanForex website
                 { video: "/videos/video6.mp4", title: "Chart Pattern Recognition", description: "Identifying profitable trading patterns" },
                 { video: "/videos/video7.mp4", title: "Trading Tips & Tricks", description: "Pro strategies for improving your trading performance" }
               ].map((videoData, index) => (
-                <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white">
+                <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white overflow-hidden">
                   <CardContent className="p-0">
                     <div className="relative">
                       <video 
                         controls
-                        className="w-full h-48 object-cover rounded-t-lg"
+                        className="w-full h-56 md:h-48 lg:h-52 object-cover rounded-t-lg"
                         poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23001a2e'/%3E%3Ctext x='200' y='140' font-family='Arial' font-size='18' fill='%23ffd700' text-anchor='middle'%3EFreemanForex%3C/text%3E%3Ctext x='200' y='165' font-family='Arial' font-size='14' fill='%23ffffff' text-anchor='middle'%3ETrading Video%3C/text%3E%3C/svg%3E"
                         preload="metadata"
                         src={videoData.video}
@@ -797,9 +797,9 @@ Sent from FreemanForex website
                       )}
                       {/* Removed custom play overlay to avoid conflicts with native controls */}
                     </div>
-                    <div className="p-6">
-                      <h3 className="text-lg font-semibold text-deep-navy mb-2">{videoData.title}</h3>
-                      <p className="text-gray-600 text-sm mb-4">{videoData.description}</p>
+                    <div className="p-4">
+                      <h3 className="text-lg font-semibold text-deep-navy mb-2 line-clamp-2">{videoData.title}</h3>
+                      <p className="text-gray-600 text-sm mb-3 line-clamp-2">{videoData.description}</p>
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-2 text-gray-500">
                           <Eye className="h-4 w-4" />
