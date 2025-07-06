@@ -119,71 +119,71 @@ Sent from FreemanForex website
       {/* Hero Section - Full Screen with Background Image */}
       <section 
         id="home" 
-        className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat pt-20 sm:pt-24"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${heroImage})`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-deep-navy/80 via-black/70 to-deep-navy/80"></div>
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <div className="max-w-5xl mx-auto space-y-8">
+          <div className="max-w-5xl mx-auto space-y-6 sm:space-y-8">
             {/* Main Headline */}
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight px-2">
               Mastering the Markets,
               <span className="text-trading-gold block mt-2">Empowering Traders</span>
             </h1>
             
             {/* Subheadline */}
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-200 leading-relaxed max-w-3xl mx-auto px-4">
               Learn, trade, and grow with Ghana's trusted forex and gold trading expert. 
               Join 500+ successful traders who achieved financial freedom.
             </p>
             
             {/* Key Stats */}
-            <div className="grid md:grid-cols-3 gap-6 mt-12">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-                <div className="text-3xl font-bold text-trading-gold">5</div>
-                <div className="text-sm text-gray-300">Years Experience</div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-6 sm:mt-12 px-4">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-white/20">
+                <div className="text-2xl sm:text-3xl font-bold text-trading-gold">5</div>
+                <div className="text-xs sm:text-sm text-gray-300">Years Experience</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-                <div className="text-3xl font-bold text-trading-gold">500+</div>
-                <div className="text-sm text-gray-300">Successful Traders</div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-white/20">
+                <div className="text-2xl sm:text-3xl font-bold text-trading-gold">500+</div>
+                <div className="text-xs sm:text-sm text-gray-300">Successful Traders</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-                <div className="text-3xl font-bold text-trading-gold">95%</div>
-                <div className="text-sm text-gray-300">Success Rate</div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-white/20">
+                <div className="text-2xl sm:text-3xl font-bold text-trading-gold">95%</div>
+                <div className="text-xs sm:text-sm text-gray-300">Success Rate</div>
               </div>
             </div>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6 sm:mt-12 px-4">
               <Button 
                 onClick={() => scrollToSection('services')}
                 size="lg" 
-                className="bg-trading-gold text-deep-navy hover:bg-yellow-500 text-lg px-8 py-6 font-semibold"
+                className="bg-trading-gold text-deep-navy hover:bg-yellow-500 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 font-semibold w-full sm:w-auto"
               >
                 Get Started Today
               </Button>
               <Button 
                 onClick={() => scrollToSection('contact')}
                 size="lg" 
-                className="bg-white text-black hover:bg-gray-100 border-2 border-white text-lg px-8 py-6 font-semibold"
+                className="bg-white text-black hover:bg-gray-100 border-2 border-white text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 font-semibold w-full sm:w-auto"
               >
                 Book Free Consultation
               </Button>
             </div>
             
             {/* Partner Badge */}
-            <div className="flex justify-center mt-12">
+            <div className="flex justify-center mt-6 sm:mt-12 px-4">
               <a 
                 href="https://one.exnesstrack.org/a/f5hxzhcxkr" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="cursor-pointer transition-transform duration-300 hover:scale-105"
+                className="cursor-pointer transition-transform duration-300 hover:scale-105 w-full max-w-sm"
               >
                 <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-colors duration-300">
-                  <CardContent className="flex items-center space-x-3 p-4">
-                    <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center p-1">
+                  <CardContent className="flex items-center space-x-3 p-3 sm:p-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-lg flex items-center justify-center p-1">
                       <img 
                         src="https://d33vw3iu5hs0zi.cloudfront.net/media/logo_big_new_f7ebab0194.svg" 
                         alt="Exness Logo" 
@@ -191,8 +191,8 @@ Sent from FreemanForex website
                       />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-300">Official Partner</p>
-                      <p className="font-semibold text-trading-gold">Exness Broker</p>
+                      <p className="text-xs sm:text-sm text-gray-300">Official Partner</p>
+                      <p className="text-sm sm:text-base font-semibold text-trading-gold">Exness Broker</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -200,7 +200,7 @@ Sent from FreemanForex website
             </div>
             
             {/* Scroll Indicator */}
-            <div className="flex justify-center mt-8 animate-bounce">
+            <div className="flex justify-center mt-6 sm:mt-8 animate-bounce">
               <button onClick={() => scrollToSection('about')} className="text-trading-gold">
                 <ChevronDown className="h-8 w-8" />
               </button>
@@ -210,73 +210,73 @@ Sent from FreemanForex website
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      <section id="about" className="py-12 sm:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             {/* Section Header */}
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-deep-navy mb-6">About FreemanForex</h2>
-              <div className="w-24 h-1 bg-trading-gold mx-auto mb-8"></div>
-              <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-deep-navy mb-4 sm:mb-6">About FreemanForex</h2>
+              <div className="w-24 h-1 bg-trading-gold mx-auto mb-6 sm:mb-8"></div>
+              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto px-4">
                 A professional trading brand dedicated to building a community of confident, skilled traders in Africa and beyond.
               </p>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
               {/* About Content */}
-              <div className="space-y-8">
+              <div className="space-y-6 sm:space-y-8">
                 {/* Mission Statement */}
                 <Card className="bg-gradient-to-r from-trading-gold to-yellow-400 text-deep-navy">
-                  <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-                    <p className="text-lg leading-relaxed">
+                  <CardContent className="p-6 sm:p-8">
+                    <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Our Mission</h3>
+                    <p className="text-base sm:text-lg leading-relaxed">
                       "To build a community of confident, skilled traders in Africa and beyond, empowering individuals with the knowledge and skills needed to achieve financial freedom through disciplined trading practices."
                     </p>
                   </CardContent>
                 </Card>
                 
                 {/* Key Points */}
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-4">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-trading-gold rounded-full flex items-center justify-center flex-shrink-0">
-                        <Medal className="text-deep-navy h-6 w-6" />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                  <div className="space-y-3 sm:space-y-4">
+                    <div className="flex items-start space-x-3 sm:space-x-4">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-trading-gold rounded-full flex items-center justify-center flex-shrink-0">
+                        <Medal className="text-deep-navy h-5 w-5 sm:h-6 sm:w-6" />
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-deep-navy">5 Years Experience</h4>
-                        <p className="text-gray-600">Proven track record in 5 years of forex and gold trading</p>
+                        <h4 className="text-base sm:text-lg font-semibold text-deep-navy">5 Years Experience</h4>
+                        <p className="text-sm sm:text-base text-gray-600">Proven track record in 5 years of forex and gold trading</p>
                       </div>
                     </div>
                     
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-trading-gold rounded-full flex items-center justify-center flex-shrink-0">
-                        <Award className="text-deep-navy h-6 w-6" />
+                    <div className="flex items-start space-x-3 sm:space-x-4">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-trading-gold rounded-full flex items-center justify-center flex-shrink-0">
+                        <Award className="text-deep-navy h-5 w-5 sm:h-6 sm:w-6" />
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-deep-navy">Official Exness Partner</h4>
-                        <p className="text-gray-600">Recognized partnership with leading broker</p>
+                        <h4 className="text-base sm:text-lg font-semibold text-deep-navy">Official Exness Partner</h4>
+                        <p className="text-sm sm:text-base text-gray-600">Recognized partnership with leading broker</p>
                       </div>
                     </div>
                   </div>
                   
-                  <div className="space-y-4">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-trading-gold rounded-full flex items-center justify-center flex-shrink-0">
-                        <Users className="text-deep-navy h-6 w-6" />
+                  <div className="space-y-3 sm:space-y-4">
+                    <div className="flex items-start space-x-3 sm:space-x-4">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-trading-gold rounded-full flex items-center justify-center flex-shrink-0">
+                        <Users className="text-deep-navy h-5 w-5 sm:h-6 sm:w-6" />
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-deep-navy">Expert Mentorship</h4>
-                        <p className="text-gray-600">Comprehensive training for all levels</p>
+                        <h4 className="text-base sm:text-lg font-semibold text-deep-navy">Expert Mentorship</h4>
+                        <p className="text-sm sm:text-base text-gray-600">Comprehensive training for all levels</p>
                       </div>
                     </div>
                     
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-trading-gold rounded-full flex items-center justify-center flex-shrink-0">
-                        <TrendingUp className="text-deep-navy h-6 w-6" />
+                    <div className="flex items-start space-x-3 sm:space-x-4">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-trading-gold rounded-full flex items-center justify-center flex-shrink-0">
+                        <TrendingUp className="text-deep-navy h-5 w-5 sm:h-6 sm:w-6" />
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-deep-navy">Proven Results</h4>
-                        <p className="text-gray-600">95% success rate with our students</p>
+                        <h4 className="text-base sm:text-lg font-semibold text-deep-navy">Proven Results</h4>
+                        <p className="text-sm sm:text-base text-gray-600">95% success rate with our students</p>
                       </div>
                     </div>
                   </div>
@@ -322,20 +322,20 @@ Sent from FreemanForex website
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-50">
+      <section id="services" className="py-12 sm:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             {/* Section Header */}
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-deep-navy mb-6">Our Services</h2>
-              <div className="w-24 h-1 bg-trading-gold mx-auto mb-8"></div>
-              <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-deep-navy mb-4 sm:mb-6">Our Services</h2>
+              <div className="w-24 h-1 bg-trading-gold mx-auto mb-6 sm:mb-8"></div>
+              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto px-4">
                 Comprehensive trading solutions designed to elevate your financial success
               </p>
             </div>
             
             {/* Services Grid */}
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12">
               {/* Service 1: Forex & Gold Trading */}
               <Card className="hover:shadow-2xl transition-all duration-300 hover:scale-105">
                 <CardContent className="p-8">
@@ -717,20 +717,20 @@ Sent from FreemanForex website
       </section>
 
       {/* Trading Vlogs Section */}
-      <section id="vlogs" className="py-20 bg-gray-50">
+      <section id="vlogs" className="py-12 sm:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             {/* Section Header */}
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-deep-navy mb-6">Trading Vlogs</h2>
-              <div className="w-24 h-1 bg-trading-gold mx-auto mb-8"></div>
-              <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-deep-navy mb-4 sm:mb-6">Trading Vlogs</h2>
+              <div className="w-24 h-1 bg-trading-gold mx-auto mb-6 sm:mb-8"></div>
+              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto px-4">
                 Watch exclusive trading insights, market analysis, and live trading sessions. Learn from real trading experiences and strategies.
               </p>
             </div>
             
             {/* Video Grid */}
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12">
               {[
                 { video: "/videos/video1.mp4", title: "Live Market Analysis", description: "Real-time market analysis and trading insights" },
                 { video: "/videos/video2.mp4", title: "Fundamental Analysis 1", description: "Understanding market fundamentals and economic indicators" },
@@ -744,7 +744,7 @@ Sent from FreemanForex website
                     <div className="relative">
                       <video 
                         controls
-                        className="w-full h-56 md:h-48 lg:h-52 object-cover rounded-t-lg"
+                        className="w-full h-48 sm:h-52 md:h-48 lg:h-52 object-cover rounded-t-lg"
                         poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23001a2e'/%3E%3Ctext x='200' y='140' font-family='Arial' font-size='18' fill='%23ffd700' text-anchor='middle'%3EFreemanForex%3C/text%3E%3Ctext x='200' y='165' font-family='Arial' font-size='14' fill='%23ffffff' text-anchor='middle'%3ETrading Video%3C/text%3E%3C/svg%3E"
                         preload="metadata"
                         src={videoData.video}
@@ -848,19 +848,19 @@ Sent from FreemanForex website
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-50">
+      <section id="contact" className="py-12 sm:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             {/* Section Header */}
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-deep-navy mb-6">Get In Touch</h2>
-              <div className="w-24 h-1 bg-trading-gold mx-auto mb-8"></div>
-              <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-deep-navy mb-4 sm:mb-6">Get In Touch</h2>
+              <div className="w-24 h-1 bg-trading-gold mx-auto mb-6 sm:mb-8"></div>
+              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto px-4">
                 Ready to start your trading journey? Contact us today and take the first step towards financial freedom.
               </p>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
               {/* Contact Information */}
               <div className="space-y-8">
                 <Card className="shadow-xl">
